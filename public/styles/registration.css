@@ -17,7 +17,7 @@
 
 body {
   /* background: linear-gradient(135deg, #1c59c5 0%, var(--white) 120%); */
-  background-color: #88b3fd;
+  background-color: #cbdeff;
   /* color: var(--text-color); */
 }
 
@@ -25,7 +25,7 @@ body {
 
 .header-container {
   padding: 1.5rem 1rem;
-  background-color: #1c59c5;
+  background-color: var(--primary-color);
   color: var(--white);
   border-bottom-right-radius: 3rem;
   border-bottom-left-radius: 3rem;
@@ -48,7 +48,7 @@ body {
   padding: 2rem 1rem;
   border-radius: 0.7rem;
   /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); */
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 20px rgba(65, 94, 255, 0.442);
   min-width: 21rem;
   max-width: 21rem;
   color: var(--text-color);
