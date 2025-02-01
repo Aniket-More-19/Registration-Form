@@ -1,0 +1,146 @@
+:root {
+  --primary-color: #1c59c5;
+  --white: #ffff;
+  --gray-color: #cac7c7;
+  --accent-color: #153e90;
+  --light-gray: #e0e0e0;
+  --font-family: "Inter", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+  font-size: 16px; /* default for browsers */
+}
+
+body {
+  /* background: linear-gradient(135deg, #1c59c5 0%, var(--white) 120%); */
+  background-color: #88b3fd;
+  /* color: var(--text-color); */
+}
+
+/* header */
+
+.header-container {
+  padding: 1.5rem 1rem;
+  background-color: #1c59c5;
+  color: var(--white);
+  border-bottom-right-radius: 3rem;
+  border-bottom-left-radius: 3rem;
+}
+
+.header-container h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* registration form */
+
+.registration-form-container {
+  padding: 2rem 0rem;
+}
+
+.registration-form {
+  background-color: var(--white);
+  padding: 2rem 1rem;
+  border-radius: 0.7rem;
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  min-width: 21rem;
+  max-width: 21rem;
+  color: var(--text-color);
+}
+
+.registration-form h2 {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.registration-form .form-label {
+  font-size: 0.875rem;
+  color: var(--secondary-color);
+  letter-spacing: 0.5px;
+  margin-bottom: 0.5rem;
+}
+
+.registration-form .form-control {
+  border: 2px solid var(--gray-color);
+  border-radius: 0.7rem;
+  padding: 1rem;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--light-gray);
+}
+
+.registration-form .form-control:focus {
+  border-color: var(--primary-color);
+  background-color: var(--white);
+  box-shadow: 0 0 8px rgba(28, 89, 197, 0.3);
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-select {
+  background-color: #f8f9fa;
+  border: 2px solid var(--gray-color);
+  border-radius: 0.4rem;
+  padding: 0.7rem;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.form-select:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+
+.btn-primary {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+}
+
+@media screen and (min-width: 48rem) {
+  .registration-form {
+    min-width: 36rem;
+    max-width: 36rem;
+  }
+
+  .registration-form .form-control {
+    font-size: 1.15rem;
+  }
+
+  .form-select {
+    font-size: 1.15rem;
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  .header-container h1 {
+    font-size: 2rem;
+  }
+  .registration-form {
+    min-width: 40rem;
+    max-width: 40rem;
+  }
+}
+
+@media screen and (min-width: 90rem) {
+  .header-container h1 {
+    font-size: 2.5rem;
+  }
+  .registration-form {
+    min-width: 44rem;
+    max-width: 44rem;
+  }
+}
