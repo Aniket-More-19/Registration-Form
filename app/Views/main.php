@@ -20,8 +20,15 @@
     <!-- HEADER: MENU + HEROE SECTION -->
     <header>
         <div class="header-container">
-            <h1>RELIANCE ENTRACE TEST</h1>
-            <h1>RET-2025</h1>
+            <div class="logo-img">
+                <img src="<?php echo base_url('images/reliance-logo.png') ?>" alt="">
+            </div>
+
+            <div>
+                <h1>RELIANCE ENTRACE TEST</h1>
+                <h1>RET-2025</h1>
+            </div>
+
         </div>
 
     </header>
@@ -30,49 +37,47 @@
     <section class="">
         <div class="registration-form-container d-flex flex-row justify-content-center align-items-center ">
             <div class="registration-form">
-                <form>
+                <form action="" method="POST">
                     <div class="mb-3">
-                        <label for="studentName" class="form-label text-uppercase fw-semibold">Student Name</label>
+                        <label for="studentName" class="form-label text-uppercase fw-semibold">Student Name <span class="compulsory-field">*</span></label>
                         <input type="text" class="form-control p-3" id="studentName" placeholder="Enter student name">
                     </div>
 
                     <div class="mb-3">
-                        <label for="motherName" class="form-label text-uppercase fw-semibold">Mother Name</label>
+                        <label for="motherName" class="form-label text-uppercase fw-semibold">Mother Name <span class="compulsory-field">*</span></label>
                         <input type="text" class="form-control p-3" id="motherName" placeholder="Enter mother name">
                     </div>
 
                     <div class="mb-3">
-                        <label for="dob" class="form-label text-uppercase fw-semibold">Date of Birth</label>
+                        <label for="dob" class="form-label text-uppercase fw-semibold">Date of Birth <span class="compulsory-field">*</span></label>
                         <input type="date" class="form-control p-3" id="dob">
                     </div>
 
                     <div class="mb-3">
-                        <label for="studentMobile" class="form-label text-uppercase fw-semibold">Student Mobile No</label>
+                        <label for="studentMobile" class="form-label text-uppercase fw-semibold">Student Mobile No <span class="compulsory-field">*</span></label>
                         <input type="tel" class="form-control p-3" id="studentMobile" placeholder="Enter mobile number">
                     </div>
 
                     <div class="mb-3">
-                        <label for="parentMobile" class="form-label text-uppercase fw-semibold">Parent Mobile No</label>
+                        <label for="parentMobile" class="form-label text-uppercase fw-semibold">Parent Mobile No <span class="compulsory-field">*</span></label>
                         <input type="tel" class="form-control p-3" id="parentMobile" placeholder="Enter parent's mobile number">
                     </div>
 
 
-
-
                     <div class="mb-3">
-                        <label for="schoolName" class="form-label">School Name</label>
+                        <label for="schoolName" class="form-label">School Name <span class="compulsory-field">*</span></label>
                         <input type="text" class="form-control" id="schoolName" placeholder="Enter school name">
                     </div>
 
                     <div class="mb-3">
-                        <label for="address" class="form-label">Address</label>
+                        <label for="address" class="form-label">Address <span class="compulsory-field">*</span></label>
                         <textarea class="form-control" id="address" rows="2" placeholder="Enter address"></textarea>
                     </div>
 
 
 
                     <div class="mb-3">
-                        <label for="casteCategory" class="form-label">Caste & Category</label>
+                        <label for="casteCategory" class="form-label">Caste & Category <span class="compulsory-field">*</span></label>
                         <select class="form-select" id="casteCategory">
                             <option selected disabled>Select Caste & Category</option>
                             <option>General</option>
@@ -84,7 +89,7 @@
                     </div>
 
                     <div class="mb-3">
-                        <label for="course" class="form-label">Course</label>
+                        <label for="course" class="form-label">Course <span class="compulsory-field">*</span></label>
                         <select class="form-select" id="course">
                             <option selected disabled>Select Course</option>
                             <option>Medical RET-2025</option>
@@ -94,7 +99,7 @@
                     </div>
 
                     <div class="mb-3">
-                        <label for="modeOfExam" class="form-label">Mode of Exam</label>
+                        <label for="modeOfExam" class="form-label">Mode of Exam <span class="compulsory-field">*</span></label>
                         <select class="form-select" id="modeOfExam">
                             <option selected disabled>Select Exam Mode</option>
                             <option>ONLINE</option>
@@ -103,7 +108,7 @@
                     </div>
 
                     <div class="mb-3">
-                        <label for="district" class="form-label">District</label>
+                        <label for="district" class="form-label">District <span class="compulsory-field">*</span></label>
                         <select class="form-select" id="district" onchange="updateTaluka()">
                             <option selected disabled>Select District</option>
                             <option>Beed</option>
@@ -120,14 +125,14 @@
                     </div>
 
                     <div class="mb-3">
-                        <label for="taluka" class="form-label">Taluka</label>
+                        <label for="taluka" class="form-label">Taluka <span class="compulsory-field">*</span></label>
                         <select class="form-select" id="taluka">
                             <option selected disabled>Select Taluka</option>
                         </select>
                     </div>
 
                     <div class="mb-3">
-                        <label for="centre" class="form-label">Centre Name & City</label>
+                        <label for="centre" class="form-label">Centre Name & City <span class="compulsory-field">*</span></label>
                         <select class="form-select" id="centre">
                             <option selected disabled>Select Centre</option>
                         </select>
@@ -135,12 +140,12 @@
 
 
                     <div class="mb-3">
-                        <label for="username" class="form-label">Username</label>
+                        <label for="username" class="form-label">Username <span class="compulsory-field">*</span></label>
                         <input type="text" class="form-control" id="username" placeholder="Enter username">
                     </div>
 
                     <div class="mb-3">
-                        <label for="password" class="form-label">Password</label>
+                        <label for="password" class="form-label">Password <span class="compulsory-field">*</span></label>
                         <input type="password" class="form-control" id="password" placeholder="Enter password">
                     </div>
 
@@ -269,6 +274,103 @@
                 });
             }
         }
+
+
+
+
+        document.querySelector("form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent form submission
+
+            let isValid = true;
+            let errorMessage = "";
+
+            // Get input values
+            const studentName = document.getElementById("studentName").value.trim();
+            const motherName = document.getElementById("motherName").value.trim();
+            const dob = document.getElementById("dob").value;
+            const studentMobile = document.getElementById("studentMobile").value.trim();
+            const parentMobile = document.getElementById("parentMobile").value.trim();
+            const schoolName = document.getElementById("schoolName").value.trim();
+            const address = document.getElementById("address").value.trim();
+            const casteCategory = document.getElementById("casteCategory").value;
+            const course = document.getElementById("course").value;
+            const modeOfExam = document.getElementById("modeOfExam").value;
+            const district = document.getElementById("district").value;
+            const taluka = document.getElementById("taluka").value;
+            const centre = document.getElementById("centre").value;
+            const username = document.getElementById("username").value.trim();
+            const password = document.getElementById("password").value.trim();
+
+            // Validation for form values
+            if (studentName === "") {
+                errorMessage += "Student Name is required.\n";
+                isValid = false;
+            }
+            if (motherName === "") {
+                errorMessage += "Mother Name is required.\n";
+                isValid = false;
+            }
+            if (dob === "") {
+                errorMessage += "Date of Birth is required.\n";
+                isValid = false;
+            }
+            if (studentMobile === "" || !/^\d{10}$/.test(studentMobile)) {
+                errorMessage += "Enter a valid 10-digit Student Mobile No.\n";
+                isValid = false;
+            }
+            if (parentMobile === "" || !/^\d{10}$/.test(parentMobile)) {
+                errorMessage += "Enter a valid 10-digit Parent Mobile No.\n";
+                isValid = false;
+            }
+            if (schoolName === "") {
+                errorMessage += "School Name is required.\n";
+                isValid = false;
+            }
+            if (address === "") {
+                errorMessage += "Address is required.\n";
+                isValid = false;
+            }
+            if (casteCategory === "Select Caste & Category") {
+                errorMessage += "Please select a Caste & Category.\n";
+                isValid = false;
+            }
+            if (course === "Select Course") {
+                errorMessage += "Please select a Course.\n";
+                isValid = false;
+            }
+            if (modeOfExam === "Select Exam Mode") {
+                errorMessage += "Please select Mode of Exam.\n";
+                isValid = false;
+            }
+            if (district === "Select District") {
+                errorMessage += "Please select a District.\n";
+                isValid = false;
+            }
+            if (taluka === "Select Taluka") {
+                errorMessage += "Please select a Taluka.\n";
+                isValid = false;
+            }
+            if (centre === "Select Centre") {
+                errorMessage += "Please select a Centre.\n";
+                isValid = false;
+            }
+            if (username === "") {
+                errorMessage += "Username is required.\n";
+                isValid = false;
+            }
+            if (password === "" || password.length < 6) {
+                errorMessage += "Password is required and must be at least 6 characters long.\n";
+                isValid = false;
+            }
+
+            // error message or submit the form
+            if (!isValid) {
+                alert(errorMessage);
+            } else {
+                alert("Form submitted successfully!");
+                event.target.submit();
+            }
+        });
     </script>
     <!-- -->
 
