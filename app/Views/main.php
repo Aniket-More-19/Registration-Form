@@ -21,7 +21,7 @@
     <header>
         <div class="header-container">
             <div class="logo-img">
-                <img src="<?php echo base_url('images/reliance-logo.png') ?>" alt="">
+                <img src="<?php echo base_url('images/reliance-logo.png') ?>" alt="reliance logo image">
             </div>
 
             <div>
@@ -35,6 +35,10 @@
 
     <!-- CONTENT -->
     <section class="">
+        <div class="copyright-container d-flex flex-row justify-content-center align-items-center">
+            <img src="<?php echo base_url('images/edofox-logo.png') ?>" alt="edofox logo image">
+            <p>powered by EDOFOX</p>
+        </div>
         <div class="registration-form-container d-flex flex-row justify-content-center align-items-center ">
             <div class="registration-form">
                 <form action="" method="POST">
@@ -149,6 +153,11 @@
                         <input type="password" class="form-control" id="password" placeholder="Enter password">
                     </div>
 
+                    <div class="mb-3">
+                        <label for="confirm-password" class="form-label">Confirm Password <span class="compulsory-field">*</span></label>
+                        <input type="password" class="form-control" id="confirm-password" placeholder="Confirm password">
+                    </div>
+
                     <button type="submit" class="btn btn-primary w-100">Submit</button>
                 </form>
             </div>
@@ -158,7 +167,6 @@
     <!-- FOOTER: DEBUG INFO + COPYRIGHTS -->
 
     <footer>
-
 
     </footer>
 

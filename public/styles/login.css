@@ -1,0 +1,263 @@
+:root {
+  --primary-color: #005091;
+  --white: #ffff;
+  --gray-color: #cac7c7;
+  --accent-color: #153e90;
+  --light-gray: #e0e0e0;
+  --font-family: "Inter", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+  font-size: 16px; /* default for browsers */
+}
+
+body {
+  background-color: #e3f3ff;
+}
+
+/* copyright */
+.copyright-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 0.5rem;
+  column-gap: 0.5rem;
+}
+
+.copyright-container img {
+  width: 1.3rem;
+  height: auto;
+}
+
+.copyright-container p {
+  color: #000;
+  font-weight: 600;
+  font-size: 0.75rem;
+  padding: 0;
+  margin: 0;
+}
+
+/* login page */
+
+.login-page-container {
+  height: 100vh;
+}
+
+.login-container {
+  position: relative; /* for copyright position*/
+
+  background-color: var(--white);
+  box-shadow: 0 2px 10px var(--primary-color);
+  padding: 1.5rem 1rem;
+  border-radius: 0.7rem;
+
+  min-width: 21rem;
+  max-width: 21rem;
+}
+
+.login-form-container {
+  padding: 0rem 0.3rem;
+}
+
+.logo-container {
+  padding: 1rem 0rem;
+  margin-bottom: 2rem;
+}
+
+.logo-container img {
+  width: 5.5rem;
+  height: auto;
+  margin-bottom: 0.5rem;
+  border-radius: 0.3rem;
+  padding: 0.2rem;
+}
+
+.logo-container h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.form-label {
+  font-size: 0.875rem;
+  color: var(--secondary-color);
+  letter-spacing: 0.5px;
+  margin-bottom: 0.5rem;
+}
+
+.form-control {
+  border: 2px solid var(--gray-color);
+  border-radius: 0.7rem;
+  padding: 1rem;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--light-gray);
+}
+
+.form-control:focus {
+  border-color: var(--primary-color);
+  background-color: var(--white);
+  box-shadow: 0 0 8px rgba(28, 89, 197, 0.3);
+}
+
+.forgot-password p {
+  color: var(--primary-color);
+  font-size: 0.875rem;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+}
+
+.signup-option p {
+  font-size: 0.875rem;
+  padding: 0.5rem;
+}
+
+.signup-option span a {
+  color: var(--primary-color);
+  font-size: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 48rem) {
+  .login-container {
+    padding: 3rem 1.5rem;
+
+    min-width: 30rem;
+    max-width: 30rem;
+  }
+
+  .logo-container {
+    padding: 1rem 0rem;
+    margin-bottom: 2rem;
+  }
+
+  .logo-container img {
+    width: 6.5rem;
+    height: auto;
+  }
+
+  .logo-container h1 {
+    font-size: 1.85rem;
+  }
+
+  .form-label {
+    font-size: 1rem;
+  }
+
+  .forgot-password p {
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  .btn-primary {
+    font-size: 1.35rem;
+  }
+
+  .signup-option p {
+    font-size: 1rem;
+    padding: 0.75rem;
+  }
+
+  .signup-option span a {
+    font-size: 1.15rem;
+  }
+
+  /* copyright */
+
+  .copyright-container {
+    margin-bottom: 1rem;
+  }
+
+  .copyright-container img {
+    width: 1.65rem;
+    height: auto;
+  }
+
+  .copyright-container p {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  .login-container {
+    padding: 3rem 1.5rem;
+
+    min-width: 35rem;
+    max-width: 35rem;
+  }
+
+  .logo-container {
+    padding: 1.75rem 0rem;
+    margin-bottom: 2rem;
+  }
+
+  .logo-container img {
+    width: 7.5rem;
+    height: auto;
+  }
+
+  .logo-container h1 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 90rem) {
+  .login-container {
+    padding: 2rem 1.5rem;
+
+    min-width: 30rem;
+    max-width: 30rem;
+  }
+
+  .logo-container {
+    padding: 1rem 0rem;
+    margin-bottom: 2rem;
+  }
+
+  .logo-container img {
+    width: 6.5rem;
+    height: auto;
+  }
+
+  .logo-container h1 {
+    font-size: 1.85rem;
+  }
+
+  .form-label {
+    font-size: 1rem;
+  }
+
+  .forgot-password p {
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  .btn-primary {
+    font-size: 1.35rem;
+  }
+
+  .signup-option p {
+    font-size: 1rem;
+    padding: 0.75rem;
+  }
+
+  .signup-option span a {
+    font-size: 1.15rem;
+  }
+}
